@@ -28,6 +28,18 @@ public class Rectangulo extends Poligono{
 		}else {
 			this.lado2 = lado2;
 		}
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Este poligono es Rectangulo [lado1=" + lado1 + ", lado2=" + lado2 + "]";
+	}
+
+	double area() {
+		double area;
+		area = lado1*lado2;
+		return area;
 	}
 	
 	

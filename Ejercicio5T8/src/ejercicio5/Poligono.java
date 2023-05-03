@@ -1,9 +1,11 @@
 package ejercicio5;
 
-public class Poligono {
+abstract class Poligono {
 	
 	public int numLados;
 	
+	abstract double area();
+    
 	public Poligono(int numLados) {
 		this.numLados=numLados;
 	}
@@ -15,6 +17,5 @@ public class Poligono {
 	public void setNumLados(int numLados) {
 		this.numLados = numLados;
 	}
-	
 	
 }

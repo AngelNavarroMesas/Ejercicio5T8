@@ -34,5 +34,18 @@ public class Triangulo extends Poligono{
 	public void setLado3(double lado3) {
 		this.lado3 = lado3;
 	}
+
+	@Override
+	public String toString() {
+		return "Este poligono es Triangulo [lado1=" + lado1 + ", lado2=" + lado2 + ", lado3=" + lado3 + "]";
+	}
+
+	public double area(){
+        double area, s;
+        s = (lado1 + lado2 + lado3)/2;
+        area = Math.sqrt(s*(s-lado1)*(s-lado2)*(s-lado3));
+        return area;
+    }
+	
 	
 }
